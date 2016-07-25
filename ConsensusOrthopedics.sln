@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsensusOrthopedics", "ConsensusOrthopedics\ConsensusOrthopedics.csproj", "{51BC2981-5AD5-4E0E-94F0-2B78D6F1CB14}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consensus.Ortho.DataModel", "Consensus.Ortho.DataModel\Consensus.Ortho.DataModel.csproj", "{80A6692F-0AEC-4C30-8618-7FFA8E74385B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consensus.Ortho.DataRepository", "Consensus.Ortho.DataRepository\Consensus.Ortho.DataRepository.csproj", "{E0A3A996-A91C-422E-9545-AFF4DFC26EF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consensus.Ortho.Services", "Consensus.Ortho.Services\Consensus.Ortho.Services.csproj", "{A7F1ADD9-42A7-4398-90BE-75F2BA25D0ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consensus.Ortho.WebAPI", "Consensus.Ortho.WebAPI\Consensus.Ortho.WebAPI.csproj", "{AA2C5C7D-8AF4-40D6-8870-C36F239D6977}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consensus.Ortho.WebAPI.Tests", "Consensus.Ortho.WebAPI.Tests\Consensus.Ortho.WebAPI.Tests.csproj", "{75A621CA-C784-41E5-ADD1-28EF61E5DFD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consensus.Ortho.Web", "Consensus.Ortho.Web\Consensus.Ortho.Web.csproj", "{BC587228-BD79-4E07-871F-6EB53AC7C57F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +21,30 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{51BC2981-5AD5-4E0E-94F0-2B78D6F1CB14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{51BC2981-5AD5-4E0E-94F0-2B78D6F1CB14}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{51BC2981-5AD5-4E0E-94F0-2B78D6F1CB14}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{51BC2981-5AD5-4E0E-94F0-2B78D6F1CB14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80A6692F-0AEC-4C30-8618-7FFA8E74385B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80A6692F-0AEC-4C30-8618-7FFA8E74385B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80A6692F-0AEC-4C30-8618-7FFA8E74385B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80A6692F-0AEC-4C30-8618-7FFA8E74385B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0A3A996-A91C-422E-9545-AFF4DFC26EF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0A3A996-A91C-422E-9545-AFF4DFC26EF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0A3A996-A91C-422E-9545-AFF4DFC26EF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0A3A996-A91C-422E-9545-AFF4DFC26EF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7F1ADD9-42A7-4398-90BE-75F2BA25D0ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7F1ADD9-42A7-4398-90BE-75F2BA25D0ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7F1ADD9-42A7-4398-90BE-75F2BA25D0ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7F1ADD9-42A7-4398-90BE-75F2BA25D0ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA2C5C7D-8AF4-40D6-8870-C36F239D6977}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA2C5C7D-8AF4-40D6-8870-C36F239D6977}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA2C5C7D-8AF4-40D6-8870-C36F239D6977}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA2C5C7D-8AF4-40D6-8870-C36F239D6977}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75A621CA-C784-41E5-ADD1-28EF61E5DFD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75A621CA-C784-41E5-ADD1-28EF61E5DFD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75A621CA-C784-41E5-ADD1-28EF61E5DFD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75A621CA-C784-41E5-ADD1-28EF61E5DFD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC587228-BD79-4E07-871F-6EB53AC7C57F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC587228-BD79-4E07-871F-6EB53AC7C57F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC587228-BD79-4E07-871F-6EB53AC7C57F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC587228-BD79-4E07-871F-6EB53AC7C57F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
